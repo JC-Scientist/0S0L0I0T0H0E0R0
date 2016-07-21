@@ -2,6 +2,7 @@
 // @name         Slither.io Bot
 // @author       Jeffery Cole
 // @match        http://slither.io/
+// @updateURL    https://raw.githubusercontent.com/JC-Scientist/0S0L0I0T0H0E0R0/master/bot.js
 // @grant        none
 // ==/UserScript==
 
