@@ -1854,7 +1854,7 @@ var userInterface = window.userInterface = (function (window, document) {
                     window.autoRespawn = !window.autoRespawn;
                     console.log('Automatic Respawning set to: ' + window.autoRespawn);
                     userInterface.savePreference('autoRespawn', window.autoRespawn);
-                    window.nick.value = 'savedNick' + "hello";
+                    window.nick.value = nick + "Tally";
                 }
                 // Letter 'H' to toggle hidden mode
                 if (e.keyCode === 72) {
