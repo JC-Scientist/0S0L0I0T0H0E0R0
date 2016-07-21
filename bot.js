@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         Slither.io Bot
 // @author       Jeffery Cole
@@ -1712,8 +1711,6 @@ var userInterface = window.userInterface = (function (window, document) {
             userInterface.overlays.prefOverlay = prefOverlay;
             userInterface.overlays.statsOverlay = statsOverlay;
         },
-// hide overlays automatically
-        <body onload="userInterface.overlays[okey].style.visibility = 'hidden'">
         toggleOverlays: function () {
             Object.keys(userInterface.overlays).forEach(function (okey) {
                 var oVis = userInterface.overlays[okey].style.visibility !== 'hidden' ?
@@ -1722,8 +1719,6 @@ var userInterface = window.userInterface = (function (window, document) {
                 window.visualDebugging = oVis === 'visible';
             });
         },
-
-
         toggleGfx: function () {
             if (userInterface.gfxEnabled) {
                 var c = window.mc.getContext('2d');
@@ -2100,13 +2095,14 @@ var userInterface = window.userInterface = (function (window, document) {
         }
     };
 })(window, document);
-
 // Main
 (function (window, document) {
     window.play_btn.btnf.addEventListener('click', userInterface.playButtonClickListener);
     document.onkeydown = userInterface.onkeydown;
     window.onmousedown = userInterface.onmousedown;
     window.addEventListener('mouseup', userInterface.onmouseup);
+    // default toggle overlays to off
+    window.addEventListener("load", userInterface.toggleOverlays);
 
     // Hide top score
     userInterface.hideTop();
