@@ -2124,7 +2124,7 @@ var userInterface = window.userInterface = (function (window, document) {
     userInterface.loadPreference('visualDebugging', false);
     userInterface.loadPreference('autoRespawn', false);
     userInterface.loadPreference('mobileRender', false);
-    window.nick.value = userInterface.loadPreference('savedNick', 'Slither.io-bot');
+    window.nick.value = userInterface.loadPreference('savedNick' + bot.scores.length, 'Slither.io-bot');
 
     // Listener for mouse wheel scroll - used for setZoom function
     document.body.addEventListener('mousewheel', canvas.setZoom);
