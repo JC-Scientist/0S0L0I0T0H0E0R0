@@ -1666,7 +1666,7 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartDiv.appendChild(CirlceStartIn);
             parentCircle.appendChild(CircleStartDiv);
 
-            userInterface.server = CirlceStartIn;
+            userInterface.CirlceStartLengthValue = CirlceStartIn;
         },
 //end input circle length
         initOverlays: function () {
@@ -2136,6 +2136,14 @@ var userInterface = window.userInterface = (function (window, document) {
     // force server
     userInterface.initServerIp();
     userInterface.server.addEventListener('keyup', function (e) {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            window.play_btn.btnf.click();
+        }
+    });
+    // force server circle start length
+    userInterface.CircleStartLength();
+    userInterface.CircleStartLengthValue.addEventListener('keyup', function (e) {
         if (e.keyCode === 13) {
             e.preventDefault();
             window.play_btn.btnf.click();
