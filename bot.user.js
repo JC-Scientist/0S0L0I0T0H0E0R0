@@ -2130,9 +2130,9 @@ var userInterface = window.userInterface = (function (window, document) {
     document.onkeydown = userInterface.onkeydown;
     window.onmousedown = userInterface.onmousedown;
     window.addEventListener('mouseup', userInterface.onmouseup);
-    // default toggle overlays to off
+    // default toggle overlays to off and default circle start length to 5000
     window.addEventListener("load", userInterface.toggleOverlays);
-
+    window.addEventListener("load", userInterface.CircleStartLengthValue.value=5000};
     // Hide top score
     userInterface.hideTop();
 
