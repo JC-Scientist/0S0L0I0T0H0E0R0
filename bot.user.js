@@ -424,7 +424,7 @@ var bot = window.bot = (function (window) {
             // distance multiplier for enCircleAllThreshold
             enCircleDistanceMult: 20,
             // snake score to start circling on self
-            followCircleLength: 5000,
+            followCircleLength: userInterface.CircleStartLengthValue.Value,
             // direction for followCircle: +1 for counter clockwise and -1 for clockwise
             followCircleDirection: +1
         },
