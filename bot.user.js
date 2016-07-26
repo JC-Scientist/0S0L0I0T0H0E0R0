@@ -1660,7 +1660,7 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartDiv.style.display = 'block';
 
             CircleStartIn.className = 'sumsginp';
-            CircleStartIn.placeholder = '5000';
+            CircleStartIn.value = '5000';
             CircleStartIn.maxLength = 21;
             CircleStartIn.style.width = '200px';
             CircleStartIn.style.height = '20px';
