@@ -1644,6 +1644,35 @@ var userInterface = window.userInterface = (function (window, document) {
 
             userInterface.server = serverIn;
         },
+//Circle Start Length Input
+    return {
+        overlays: {},
+        gfxEnabled: true,
+
+        initServerIp: function () {
+            var parent = document.getElementById('playh');
+            var CircleStartDiv = document.createElement('div');
+            var CirlceStartIn = document.createElement('input');
+
+            CircleStartDiv.style.width = '244px';
+            CircleStartDiv.style.margin = '-30px auto';
+            CircleStartDiv.style.boxShadow = 'rgb(0, 0, 0) 0px 6px 50px';
+            CircleStartDiv.style.opacity = 1;
+            CircleStartDiv.style.background = 'rgb(76, 68, 124)';
+            CircleStartDiv.className = 'taho';
+            CircleStartDiv.style.display = 'block';
+
+            CirlceStartIn.className = 'sumsginp';
+            CirlceStartIn.placeholder = '5000';
+            CirlceStartIn.maxLength = 21;
+            CirlceStartIn.style.width = '220px';
+            CirlceStartIn.style.height = '24px';
+
+            CircleStartDiv.appendChild(CirlceStartIn);
+            parent.appendChild(CircleStartDiv);
+
+            userInterface.server = CirlceStartIn;
+        },
 
         initOverlays: function () {
             var botOverlay = document.createElement('div');
