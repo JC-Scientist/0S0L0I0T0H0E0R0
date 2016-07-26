@@ -1651,7 +1651,8 @@ var userInterface = window.userInterface = (function (window, document) {
             var CircleStartIn = document.createElement('input');
 
             CircleStartDiv.style.width = '244px';
-            CircleStartDiv.style.margin = '-30px auto';
+            CircleStartDiv.style.height = '30px';
+            CircleStartDiv.style.margin = '35px auto';
             CircleStartDiv.style.boxShadow = 'rgb(0, 0, 0) 0px 6px 50px';
             CircleStartDiv.style.opacity = 1;
             CircleStartDiv.style.background = 'rgb(76, 68, 124)';
@@ -1661,8 +1662,9 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartIn.className = 'sumsginp';
             CircleStartIn.placeholder = '5000';
             CircleStartIn.maxLength = 21;
-            CircleStartIn.style.width = '220px';
-            CircleStartIn.style.height = '24px';
+            CircleStartIn.style.width = '200px';
+            CircleStartIn.style.height = '20px';
+            CircleStartIn.style.margin = '-4px';
 
             CircleStartDiv.appendChild(CircleStartIn);
             parentCircle.appendChild(CircleStartDiv);
