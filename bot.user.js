@@ -1650,7 +1650,7 @@ var userInterface = window.userInterface = (function (window, document) {
         gfxEnabled: true,
 
         CircleStartLength: function () {
-            var parent = document.getElementById('playh');
+            var parentCircle = document.getElementById('playh');
             var CircleStartDiv = document.createElement('div');
             var CirlceStartIn = document.createElement('input');
 
@@ -1669,7 +1669,7 @@ var userInterface = window.userInterface = (function (window, document) {
             CirlceStartIn.style.height = '24px';
 
             CircleStartDiv.appendChild(CirlceStartIn);
-            parent.appendChild(CircleStartDiv);
+            parentCircle.appendChild(CircleStartDiv);
 
             userInterface.server = CirlceStartIn;
         },
