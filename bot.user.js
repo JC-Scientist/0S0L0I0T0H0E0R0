@@ -1659,7 +1659,6 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartDiv.className = 'taho';
             CircleStartDiv.style.display = 'block';
 
-            CircleStartIn.type = 'number';
             CircleStartIn.className = 'sumsginp';
             CircleStartIn.value = '5000';
             CircleStartIn.maxLength = 21;
