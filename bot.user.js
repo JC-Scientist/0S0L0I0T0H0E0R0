@@ -1643,6 +1643,7 @@ var userInterface = window.userInterface = (function (window, document) {
             parent.appendChild(serverDiv);
 
             userInterface.server = serverIn;
+        },
 //Circle Start Length Input
         CircleStartLength: function () {
             var parentCircle = document.getElementById('playh');
