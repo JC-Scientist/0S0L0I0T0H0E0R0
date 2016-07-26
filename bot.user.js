@@ -1647,7 +1647,7 @@ var userInterface = window.userInterface = (function (window, document) {
         CircleStartLength: function () {
             var parentCircle = document.getElementById('playh');
             var CircleStartDiv = document.createElement('div');
-            var CirlceStartIn = document.createElement('input');
+            var CircleStartIn = document.createElement('input');
 
             CircleStartDiv.style.width = '244px';
             CircleStartDiv.style.margin = '-30px auto';
@@ -1657,16 +1657,16 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartDiv.className = 'taho';
             CircleStartDiv.style.display = 'block';
 
-            CirlceStartIn.className = 'CircleStartLength';
-            CirlceStartIn.placeholder = '5000';
-            CirlceStartIn.maxLength = 21;
-            CirlceStartIn.style.width = '220px';
-            CirlceStartIn.style.height = '24px';
+            CircleStartIn.className = 'CircleStartLength';
+            CircleStartIn.placeholder = '5000';
+            CircleStartIn.maxLength = 21;
+            CircleStartIn.style.width = '220px';
+            CircleStartIn.style.height = '24px';
 
-            CircleStartDiv.appendChild(CirlceStartIn);
+            CircleStartDiv.appendChild(CircleStartIn);
             parentCircle.appendChild(CircleStartDiv);
 
-            userInterface.CirlceStartLengthValue = CirlceStartIn;
+            userInterface.CircleStartLengthValue = CircleStartIn;
         },
 //end input circle length
         initOverlays: function () {
