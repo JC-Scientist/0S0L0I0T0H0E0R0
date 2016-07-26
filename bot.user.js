@@ -1649,7 +1649,7 @@ var userInterface = window.userInterface = (function (window, document) {
         overlays: {},
         gfxEnabled: true,
 
-        initServerIp: function () {
+        CircleStartLength: function () {
             var parent = document.getElementById('playh');
             var CircleStartDiv = document.createElement('div');
             var CirlceStartIn = document.createElement('input');
@@ -1662,7 +1662,7 @@ var userInterface = window.userInterface = (function (window, document) {
             CircleStartDiv.className = 'taho';
             CircleStartDiv.style.display = 'block';
 
-            CirlceStartIn.className = 'sumsginp';
+            CirlceStartIn.className = 'CircleStartLength';
             CirlceStartIn.placeholder = '5000';
             CirlceStartIn.maxLength = 21;
             CirlceStartIn.style.width = '220px';
@@ -1673,7 +1673,7 @@ var userInterface = window.userInterface = (function (window, document) {
 
             userInterface.server = CirlceStartIn;
         },
-
+//end input circle length
         initOverlays: function () {
             var botOverlay = document.createElement('div');
             botOverlay.style.position = 'fixed';
@@ -2140,6 +2140,7 @@ var userInterface = window.userInterface = (function (window, document) {
 
     // force server
     userInterface.initServerIp();
+    userInterface.CircleStartLength();
     userInterface.server.addEventListener('keyup', function (e) {
         if (e.keyCode === 13) {
             e.preventDefault();
