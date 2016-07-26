@@ -2135,7 +2135,6 @@ var userInterface = window.userInterface = (function (window, document) {
 
     // force server
     userInterface.initServerIp();
-    userInterface.CircleStartLength();
     userInterface.server.addEventListener('keyup', function (e) {
         if (e.keyCode === 13) {
             e.preventDefault();
